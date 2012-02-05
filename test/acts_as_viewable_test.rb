@@ -39,6 +39,7 @@ class ActsAsViewableTest < ActiveSupport::TestCase
     @question = questions(:one)
     @question.view!("192.168.33.2")
     assert_equal 1, @question.nb_views
+    puts "PAS DE TITI"
     @question.view!("192.168.33.2")
     assert_equal 1, @question.nb_views
   end
