@@ -8,7 +8,7 @@ module ActsAsViewable
     private
 
       def ip_has_not_viewed_viewable_in_last_n_minutes
-        # time_ago = (viewable_type.camelcase.constantize::VIEW_TIME_TO_LIVE || 0).minutes.ago
+        time_ago = (viewable_type.camelcase.constantize::VIEW_TIME_TO_LIVE || 0).minutes.ago
         # views = View.all
         # views.each do |v|
         #   puts "MAX DELAY #{time_ago}"
